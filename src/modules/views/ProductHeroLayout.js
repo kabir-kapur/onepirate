@@ -6,7 +6,8 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 
 const ProductHeroLayoutRoot = styled('section')(({ theme }) => ({
-  color: theme.palette.common.white,
+  color: theme.palette.common.white
+  ,
   position: 'relative',
   display: 'flex',
   alignItems: 'center',
@@ -36,7 +37,7 @@ function ProductHeroLayout(props) {
       <Container
         sx={{
           mt: 3,
-          mb: 14,
+          mb: 3,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -55,14 +56,14 @@ function ProductHeroLayout(props) {
           }}
         />
         <Background sx={sxBackground} />
-        <Box
+        {/* <Box
           component="img"
           src="/static/themes/onepirate/productHeroArrowDown.png"
           height="16"
           width="12"
           alt="arrow down"
           sx={{ position: 'absolute', bottom: 32 }}
-        />
+        /> */}
       </Container>
     </ProductHeroLayoutRoot>
   );

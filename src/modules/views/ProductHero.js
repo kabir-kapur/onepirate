@@ -8,22 +8,23 @@ export default function ProductHero() {
   return (
     <ProductHeroLayout
       sxBackground={{
-        backgroundColor: 'white', // Average color of the background image.
+        backgroundColor: 'black', // Average color of the background image.
         backgroundPosition: 'center'
       }}
     >
       {/* Increase the network loading priority of the background image. */}
       <Typography 
-        color="black" 
+        color="white" 
         align="center" 
-        variant="h2" 
+        variant="h2"
         marked="center"
+        sx={{ mb: 8}}
       >
-        find some mf freelancers
+        placeholder blah blah 
       </Typography>
-      <TextField variant='filled' placeholder='~~~placeholder~~~' inputProps={{style: {width: 1000, height: 50, fontSize: 30} }}/>
+      <TextField variant='filled' placeholder='bussdownpatek' inputProps={{style: {width: 1000, height: 50, fontSize: 30} }}/>
       <Typography
-        color="black"
+        color="gray"
         align="center"
         variant="h5"
         sx={{ mb: 2, mt: { xs: 2, sm: 2 } }}
@@ -38,11 +39,8 @@ export default function ProductHero() {
         href="/premium-themes/onepirate/sign-up/"
         sx={{ minWidth: 200 }}
       >
-        Register
+        register
       </Button>
-      <Typography variant="body2" color="black" sx={{ mt: 2 }}>
-        Discover the experience
-      </Typography>
     </ProductHeroLayout>
   );
 }
