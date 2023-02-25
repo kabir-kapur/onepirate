@@ -20,14 +20,14 @@ export default function ProductHero() {
         marked="center"
         sx={{ mb: 8}}
       >
-        placeholder blah blah 
+        [redacted]
       </Typography>
       <TextField variant='filled' placeholder='bussdownpatek' inputProps={{style: {width: 1000, height: 50, fontSize: 30} }}/>
       <Typography
         color="gray"
         align="center"
         variant="h5"
-        sx={{ mb: 2, mt: { xs: 2, sm: 2 } }}
+        sx={{ eb: 2, mt: { xs: 2, sm: 2 }, mb: { xs: 2, sm: 2 } }}
       >
         I cooked it up and then i went global
       </Typography>

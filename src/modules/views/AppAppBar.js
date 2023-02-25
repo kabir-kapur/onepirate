@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
-import { color } from '@mui/system';
 
 const rightLink = {
   fontSize: 16,
@@ -21,17 +20,17 @@ function AppAppBar() {
             variant="h6"
             underline="none"
             color="inherit"
-            href="/premium-themes/onepirate/" // probably not found (?)
+            to="/../../Home/"
             sx={{ fontSize: 36 }}
           >
-            {'my collection'}
+            {'wouldn\'t you like to know'}
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
           <Link
               color="inherit"
               variant="h6"
               underline="none"
-              href="/my-account"
+              href="/MyAccount"
               sx={rightLink}
             >
               {'My Account'}
@@ -40,7 +39,7 @@ function AppAppBar() {
               color="inherit"
               variant="h6"
               underline="none"
-              href="/sign-in"
+              to="../../sign-in"
               sx={rightLink}
             >
               {'Sign In'}
@@ -48,7 +47,7 @@ function AppAppBar() {
             <Link
               variant="h6"
               underline="none"
-              href="/sign-up"
+              href="SignUp"
               sx={{ ...rightLink, color: 'secondary.main' }}
             >
               {'Sign Up'}
